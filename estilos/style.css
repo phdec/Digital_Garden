@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --fundo: rgb(208, 237, 255);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            var(--fundo),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            var(--fundo),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 70% 90%,
+            var(--fundo),
+            transparent 40%
+        ),
+        white;
+}
+
+body.javascript {
+    --fundo: rgba(255, 255, 0, 0.575);
+}
+
+header {
+    padding: 1rem;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: coral;
+    font-weight: bold;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    transition: color 0.3s;
+}
+
+li > a:hover {
+    color: cornflowerblue;
+}
+
+main {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+article {
+    max-width: 80vw;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    color: cornflowerblue;
+}
+
+h1 {
+    color: coral;
+    font-size: 3rem;
+}
